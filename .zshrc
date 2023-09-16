@@ -55,3 +55,9 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias cdf='cd $(find * -type d | fzf)'
+alias copy="xclip -sel clip"
+alias ls="exa --icons --color=always"
+# add home brew to path
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
